@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+    <style>
+        .grid-container {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-areas:
+    "menu";
+}
+
+.grid-item-menu {
+  grid-area: menu;
+}
+
+/* Menu */
+.flex-item-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.container {
+  margin-bottom: 50px;
+}
+
+.menu-group-heading {
+  margin: 0;
+  padding-bottom: 1em;
+  border-bottom: 2px solid #ccc;
+}
+
+.menu-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5em;
+  padding: 1.5em 0;
+}
+
+.menu-item {
+  display: flex;
+}
+
+.menu-item-image {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  object-fit: cover;
+  margin-right: 1.5em;
+}
+
+.menu-item-text {
+  flex-grow: 1;
+}
+
+.menu-item-heading {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.menu-item-name {
+  margin-right: 1.5em;
+}
+
+.menu-item-description {
+  line-height: 1.6;
+}
+
+/* Responsive Code*/
+@media screen and (min-width: 992px){}
+
+  .menu-group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .menu-item-image {
+    width: 125px;
+    height: 125px;
+  }
+}
+    </style>
+</head>
+<body>
+<h1>menupage</h1>
+
+<!-- Header -->
+<div class="grid-container">
+
+  <!-- Menu -->
+  <div class="flex-item-menu">
+
+    <!-- Sides -->
+    <div class="container">
+      <div class="menu">
+        <h2 class="menu-group-heading">
+          Sides
+        </h2>
+
+        <div class="menu-group">
+
+          <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1518013431117-eb1465fa5752?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" class="menu-item-image">
+            <div class="menu-item-text">
+              <h3 class="menu-item-heading">
+                <span class="menu-item-name">French Fries</span>
+                <span class="menu-item-price">$3.50</span>
+              </h3>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1640718534252-aeb6e7e5c49e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1043&q=80" class="menu-item-image">
+            <div class="menu-item-text">
+              <h3 class="menu-item-heading">
+                <span class="menu-item-name">Spinach Rolls</span>
+                <span class="menu-item-price">$2.75</span>
+              </h3>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1593895647433-5a608a3bd379?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="menu-item-image">
+            <div class="menu-item-text">
+              <h3 class="menu-item-heading">
+                <span class="menu-item-name">Mozzarella Sticks</span>
+                <span class="menu-item-price">$5.75</span>
+              </h3>
+              <p>5 Sticks</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1625938145744-e380515399bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1046&q=80" class="menu-item-image">
+            <div class="menu-item-text">
+              <h3 class="menu-item-heading">
+                <span class="menu-item-name">Bread Sticks</span>
+                <span class="menu-item-price">$5.50</span>
+              </h3>
+              <p>6 Sticks</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Salads -->
+    <div class="container">
+      <div class="menu">
+        <h2 class="menu-group-heading">
+          Salads
+        </h2>
+
+        <p>Dressings: Oil and vinegar, house, french, ranch, thousand island, creamy italian, blue cheese, balsamic greek</p>
+        <p>Extra dressing: $0.50 | Mozzarella $1.00</p>
+
+        <div class="menu-group">
+          <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1607532941433-304659e8198a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1078&q=80" class="menu-item-image">
+            <div class="menu-item-text">
+              <h3 class="menu-item-heading">
+                <span class="menu-item-name">Regular Salad</span>
+                <span class="menu-item-price">$5.99</span>
+              </h3>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1505714197102-6ae95091ed70?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="menu-item-image">
+            <div class="menu-item-text">
+              <h3 class="menu-item-heading">
+                <span class="menu-item-name">Steak Salad</span>
+                <span class="menu-item-price">$7.50</span>
+              </h3>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1471253794676-0f039a6aae9d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="menu-item-image">
+            <div class="menu-item-text">
+              <h3 class="menu-item-heading">
+                <span class="menu-item-name">Chef's Salad</span>
+                <span class="menu-item-price">$6.99</span>
+              </h3>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1529059997568-3d847b1154f0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="menu-item-image">
+            <div class="menu-item-text">
+              <h3 class="menu-item-heading">
+                <span class="menu-item-name">Turkey Salad</span>
+                <span class="menu-item-price">$6.99</span>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
